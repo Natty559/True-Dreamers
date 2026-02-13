@@ -1,115 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRUE DREAMERS TRAVEL AND TOUR</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XEST FOLIO - Inspired Layout</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="sections.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
-<link rel="stylesheet" href="index.css">
-<script src="index.js" async defer type="text/javascript"></script>
-<link rel="stylesheet" href="index.js">
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="aboutus_nav.html">About us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <img src="logo.jpg" alt="Hero Image" style="height: 100px;width: 100px;" id="logo">
-     <p id="WELCOME">WELCOME</p>
-     <p id="TO">TO</p>
-    <h1 class="title">TRUE DREAMERS TRAVEL AND TOUR</h1>
-    <main>
-        <section id="home">
-            <h1>Welcome to TRUE DREAMERS TRAVEL AND TOUR</h1>
-            <img src="logo.jpg" alt="Hero Image" style="height: 50px;width: 50px;">
-            <p>Explore the world with us!</p>
-        </section>
-        <section id="destinations">
-            <h2>Popular Destinations</h2>
-            <div class="destination-grid">
-                <div class="destination">
-                    <img src="UK.jpg" alt="Destination 1" style="height: 70px;;">
-                    <h3>United Kindom(UK)</h3>
-                    <p>United Kindom(UK)</p>
-                </div>
-                <div class="destination">
-                    <img src="China.jpg" alt="Destination 2" style="height: 70px;">
-                    <h3>CHINA</h3>
-                    <p>CHINA</p>
-                </div>
-                <div class="destination">
-                    <img src="others.jpg" alt="Destination Others" style="height: 70px;">
-                    <h3>Others</h3>
-                    <p>Travel destination in various countries</p>
-                </div>
-                <!-- Add more destinations -->
-            </div>
-        </section>
-        <section id="packages">
-            <h2>Travel Packages</h2>
-            <div class="package-grid">
-                <div class="package">
-                    <img src="japan.jpg" alt="Package 1" style="height: 70px;">
-                    <h3>Japan</h3>
-                    <p>Japan</p>
-                    <button style="background-color: lightcyan; color: black;">Book Now</button>
-                </div>
-                <div class="package">
-                    <img src="Argentina.jpg" alt="Package 2" style="height: 70px;;">
-                    <h3>Argentina</h3>
-                    <p>Argentina</p>
-                    <button style="background-color: lightcyan; color: black;">Book Now</button>
-                </div>
-                <div class="package">
-                    <img src="others.jpg" alt="Package 2" style="height: 70px;">
-                    <h3>Others</h3>
-                    <p>Others</p>
-                    <button style="background-color: lightcyan; color: black;">Book Now</button>
-                </div>
-                <!-- Add more packages -->
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button>Send</button>
-            </form>
-        </section>
-    </main>
-    <script src="script.js"></script>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="logo.jpg" alt="logo.jpg" class="footer-logo-img">
-            </div>
-            <div class="footer-info">
-                <p><strong>Location:</strong> Abuakwa Ashanti</p>
-                <p><strong>Contact:</strong> +233 551155126</p>
-                <p><strong>P. O. Box:</strong> 94</p>
-            </div>
-            <div class="footer-socials">
-                <p><strong>Follow Us:</strong></p>
-                <a href="https://www.instagram.com/TrueDreamers" target="_blank" class="social-link">Instagram</a>
-                <a href="https://www.tiktok.com/@TrueDreamers" target="_blank" class="social-link">TikTok</a>
-                <a href="https://www.Facebook.com/TrueDreamers" target="_blank" class="social-link">Facebook</a>
-                <a href="https://www.twiter.com/TrueDreamers" target="_blank" class="social-link">Twiter</a>
-                <a href="https://www.Youtube.com/TrueDreamers" target="_blank" class="social-link">Youtube</a>
-            </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">XEST<br>FOLIO</a>
+
+      <input id="menu-toggle" class="menu-toggle" type="checkbox">
+      <label for="menu-toggle" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-nav" href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="about">
+      <div class="hero-image">
+        <img src="logo.jpg" alt="Creative portrait">
+      </div>
+      <div class="hero-text">
+        <h1><span>MIAMI</span><br>WALKER</h1>
+        <p>Award Winning product designer based in Georgia. We create user-friendly interfaces for fast-growing startups.</p>
+        <a class="btn" href="#contact">Book A Call</a>
+      </div>
+    </section>
+
+    <section class="trusted container">
+      <p>Trusted By</p>
+      <div class="trusted-logos">
+        <span>PAPERZ</span><span>Dorfus</span><span>Martino</span><span>square</span><span>Gobona</span>
+      </div>
+    </section>
+
+    <section class="features container" id="service">
+      <div class="features-intro">
+        <p class="mini">FEATURES</p>
+        <h2>Giving Your Business<br>Some Great Ideas</h2>
+        <p>Every business needs the right innovation ideas. This is why we can do that best in product interaction and scalable systems.</p>
+        <a class="btn" href="#contact">Contact Us</a>
+      </div>
+      <div class="feature-cards">
+        <article><img src="UK.jpg" alt="UX"><h3>UX Experience</h3><p>I design process-centered and modern thinking interfaces.</p></article>
+        <article><img src="China.jpg" alt="UI"><h3>UI Design</h3><p>I design product digital user interactions and visual systems.</p></article>
+        <article><img src="others.jpg" alt="Analysis"><h3>Product Analysis</h3><p>I design products that solve business needs.</p></article>
+        <article><img src="Argentina.jpg" alt="Product"><h3>Product Design</h3><p>I design user products with practical and modern visual balance.</p></article>
+      </div>
+    </section>
+
+    <section class="stats container">
+      <div><strong>12K+</strong><span>Project Complete</span></div>
+      <div><strong>7K+</strong><span>Happy Client</span></div>
+      <div><strong>10+</strong><span>Years Experience</span></div>
+      <div><strong>270+</strong><span>Win Awards</span></div>
+    </section>
+
+    <section class="portfolio container">
+      <div class="section-head">
+        <div>
+          <p class="mini">PORTFOLIO</p>
+          <h2>Some Of Our Best Works</h2>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 True Dreamers. All Rights Reserved.</p>
-            <p>Designed by Natty_fyn</p>
+        <a class="btn" href="#">Load More</a>
+      </div>
+      <div class="portfolio-grid">
+        <img src="japan.jpg" alt="Project 1">
+        <img src="others.jpg" alt="Project 2">
+        <img src="UK.jpg" alt="Project 3">
+        <img src="China.jpg" alt="Project 4">
+        <img src="Argentina.jpg" alt="Project 5">
+        <img src="japan.jpg" alt="Project 6">
+      </div>
+    </section>
+
+    <section class="blog" id="blogs">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="mini">LATEST BLOG</p>
+            <h2>Check Some of Latest<br>News & Articles</h2>
+          </div>
+          <a class="btn" href="#">Load More</a>
+        </div>
+        <div class="blog-grid">
+          <article><img src="others.jpg" alt="Blog"><h3>What is UI Design in Front End Design?</h3><p>Get immediate access to one of the world’s best product design resources.</p><a href="#">READ MORE</a></article>
+          <article><img src="UK.jpg" alt="Blog"><h3>What is UI Design in Front End Design?</h3><p>Business strategy and planning experience from branded teams and startups.</p><a href="#">READ MORE</a></article>
+          <article><img src="China.jpg" alt="Blog"><h3>What is UI Design in Front End Design?</h3><p>Create systems and clear interactions for growth-focused products.</p><a href="#">READ MORE</a></article>
+          <article><img src="Argentina.jpg" alt="Blog"><h3>What is UI Design in Front End Design?</h3><p>Deliver modern layouts for web-based experiences and teams.</p><a href="#">READ MORE</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <p class="mini">TESTIMONIALS</p>
+      <h2>What our customer say</h2>
+      <div class="testimonial-grid">
+        <article><p>“Now, i can track my business activity with easier and have a great understandable to operate the products”</p><div class="person">Danny Gunawan <span>⭐ 3.5</span></div></article>
+        <article><p>“Now, i can track my business activity with easier and have a great understandable to operate the products”</p><div class="person">Janne Cooper <span>⭐ 4.3</span></div></article>
+        <article><p>“Now, i can track my business activity with easier and have a great understandable to operate the products”</p><div class="person">Coboconaneru <span>⭐ 3.5</span></div></article>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container faq-wrap">
+        <div class="faq-list">
+          <details><summary>How can we help your business?</summary><p>We provide practical product solutions for your goals.</p></details>
+          <details><summary>What are the advantages of Bixnext</summary><p>Better workflows, improved user outcomes, clear product direction.</p></details>
+          <details><summary>Let's find an office near you?</summary><p>Remote-first with city collaborations available globally.</p></details>
+          <details><summary>How IT consultancy experts work?</summary><p>Research, strategy, design, testing, and delivery support.</p></details>
+        </div>
+        <div class="faq-copy">
+          <p class="mini">FAQS</p>
+          <h2>Be Kind to Your Mind<br>Question & Answer</h2>
+          <p>All your business in one place. Immediate and smarter forms for modern movement to shape creative commerce services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container" id="contact">
+      <p class="mini">HAVE YOU PROJECT IN MIND?</p>
+      <h2>Let's Make Something<br>Great Together!</h2>
+      <a href="#" class="circle-btn">CONTACT WITH US ↗</a>
+      <p class="logo-bottom">XEST<br>FOLIO</p>
+      <div class="socials"><span>f</span><span>in</span><span>◎</span><span>Bē</span><span>◉</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small>© 2023 Jacopco Inc. All Rights Reserved</small>
+      <small>Privacy Policy | Terms and Conditions</small>
+    </div>
+  </footer>
 </body>
 </html>
-
