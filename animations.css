@@ -1,0 +1,14 @@
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+.hero,.trusted,.features,.stats,.portfolio,.blog,.testimonials,.faq,.cta{animation:fadeUp .7s ease both}
+.trusted{animation-delay:.05s}.features{animation-delay:.1s}.stats{animation-delay:.15s}.portfolio{animation-delay:.2s}
+.blog{animation-delay:.25s}.testimonials{animation-delay:.3s}.faq{animation-delay:.35s}.cta{animation-delay:.4s}
+
+.feature-cards article,.portfolio-grid img,.blog article,.testimonial-grid article{transition:transform .25s ease, box-shadow .25s ease}
+.feature-cards article:hover,.portfolio-grid img:hover,.blog article:hover,.testimonial-grid article:hover{transform:translateY(-4px)}
+
+.circle-btn{transition:transform .25s ease,filter .25s ease}
+.circle-btn:hover{transform:scale(1.05);filter:saturate(1.2)}
+
+img{animation:fadeIn .8s ease both}
